@@ -5,10 +5,10 @@
 set -x
 set -e -o pipefail
 
-while getopts ":w:" opt; do
+while getopts "w:" opt; do
   case $opt in
     a)
-      cd $OPTARG
+      cd $opt
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
