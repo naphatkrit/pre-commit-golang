@@ -2,6 +2,7 @@
 #
 # Capture and print stdout, since goimports doesn't use proper exit codes
 #
+set -x
 set -e -o pipefail
 
 while getopts ":w:" opt; do
