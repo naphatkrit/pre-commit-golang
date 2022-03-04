@@ -7,7 +7,7 @@ set -e -o pipefail
 
 while getopts "w:" opt; do
   case $opt in
-    a)
+    w)
       cd $opt
       ;;
     \?)

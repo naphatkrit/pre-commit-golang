@@ -3,7 +3,7 @@ set -x
 
 while getopts "w:" opt; do
   case $opt in
-    a)
+    w)
       cd $opt
       ;;
     \?)
