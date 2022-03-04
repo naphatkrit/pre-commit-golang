@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-set -x
-
 while getopts "w:" opt; do
   case $opt in
     w)
