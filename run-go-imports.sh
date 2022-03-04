@@ -8,7 +8,7 @@ set -e -o pipefail
 while getopts "w:" opt; do
   case $opt in
     w)
-      cd $opt
+      cd $OPTARG
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
